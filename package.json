@@ -37,6 +37,8 @@
     "@babel/preset-env": "^7.8.7",
     "@rollup/plugin-commonjs": "^11.0.2",
     "@rollup/plugin-node-resolve": "^7.1.1",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
     "cssnano": "^4.1.10",
     "eslint": "^6.8.0",
     "eslint-plugin-compat": "^3.5.1",
