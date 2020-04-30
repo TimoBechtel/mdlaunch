@@ -12,6 +12,8 @@
   ·
   <a href="https://github.com/TimoBechtel/mdlaunch#readme">Homepage</a>
   ·
+  <a href="https://timobechtel.github.io/mdlaunch/">View Demo</a>
+  ·
   <a href="https://github.com/TimoBechtel/mdlaunch/issues">Report Bug / Request Feature</a>
   ·
 </p>
@@ -27,6 +29,8 @@
 - [License](#license)
 
 ## About
+
+**▶ [View this readme as slideshow generated with mdlaunch!](https://timobechtel.github.io/mdlaunch/)**
 
 `mdlaunch` was made to quickly create a HTML slideshow from any existing markdown files without making changes.
 So you can spin up a presentation from your existings notes/wiki/etc.
