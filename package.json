@@ -1,6 +1,6 @@
 {
   "name": "mdlaunch",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Quickly spin up a HTML presentation from any existing markdown file.",
   "bin": "lib/main.js",
   "files": [
