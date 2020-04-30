@@ -46,6 +46,7 @@ export default {
     html({
       template: 'src/template.html',
       fileName: 'index.html',
+      onlinePath: '.',
       minify: dev
         ? false
         : {
