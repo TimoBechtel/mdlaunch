@@ -75,7 +75,7 @@ Options:
 
 ```sh
 # Build a presentation to my-presentation without starting a server.
-# Also use any header with level 4 or higher to separate slides. (e.g. ### Header)
+# Also use any header with level 4 or lower to separate slides. (e.g. ### Header)
 mdlaunch build README.md --output "my-presentation" --header-level 4
 
 # Build a presentation and run it on port 3000. Also separate slides with <hr>.
