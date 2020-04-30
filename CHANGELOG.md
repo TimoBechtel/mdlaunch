@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/TimoBechtel/mdlaunch/compare/v1.0.0...v1.1.0) (2020-04-30)
+
+
+### Bug Fixes
+
+* **markdownParser:** fix issue where anchor link is parsed as title ([f186c57](https://github.com/TimoBechtel/mdlaunch/commit/f186c577870417b216c07e029dbeab914c3102bb))
+
+
+### Features
+
+* **example:** add example ([deb1855](https://github.com/TimoBechtel/mdlaunch/commit/deb18553b5da7d7d98339f19f3691299762534ac))
+
 # 1.0.0 (2020-04-30)
 
 
