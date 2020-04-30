@@ -1,0 +1,93 @@
+<!doctype html><!DOCTYPE html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Table of Contents</title><link rel=stylesheet href=./index.css></head><body><div class=reveal><div class=slides> <section><h1 align="center">📄🚀<br>mdlaunch</h1>
+<h3 align="center">Quickly spin up a HTML presentation from any existing markdown file.</h3>
+<p align="center">
+  <a href="https://www.npmjs.com/package/mdlaunch" target="_blank">
+    <img alt="Version" src="https://img.shields.io/npm/v/mdlaunch.svg">
+  </a>
+  <a href="https://github.com/TimoBechtel/mdlaunch/blob/master/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/github/license/TimoBechtel/mdlaunch" />
+  </a>
+</p>
+<p align="center">
+  ·
+  <a href="https://github.com/TimoBechtel/mdlaunch#readme">Homepage</a>
+  ·
+  <a href="https://timobechtel.github.io/mdlaunch/">View Demo</a>
+  ·
+  <a href="https://github.com/TimoBechtel/mdlaunch/issues">Report Bug / Request Feature</a>
+  ·
+</p>
+
+</section><section><h2 id="table-of-contents">Table of Contents</h2>
+            <ul>
+<li><a href="#about">About</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#examples">Examples</a></li>
+<li><a href="#run-tests">Test</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="#Contributing">Contributing</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+</section><section><h2 id="about">About</h2>
+            <p><strong>▶ <a href="https://timobechtel.github.io/mdlaunch/">View this readme as slideshow generated with mdlaunch!</a></strong></p>
+<p><code>mdlaunch</code> was made to quickly create a HTML slideshow from any existing markdown files without making changes.
+So you can spin up a presentation from your existings notes/wiki/etc.</p>
+<p>It uses <a href="https://github.com/hakimel/reveal.js/">Reveal.js</a> under the hood.</p>
+</section><section><h2 id="usage">Usage</h2>
+            <pre><code class="language-sh">npx mdlaunch YOUR_MARKDOWN_FILE</code></pre>
+<p>And open it with any webbrowser: <a href="http://localhost:5000">http://localhost:5000</a></p>
+<p>You can of course install it globally, if you want to:</p>
+<pre><code class="language-sh">npm install --global mdlaunch</code></pre>
+</section><section><h3 id="help-screen">Help screen:</h3>
+            <pre><code>mdlaunch &lt;file&gt; [port]
+
+build a presentation from markdown and start a server
+
+Commands:
+  mdlaunch &lt;file&gt; [port]        alias to server &quot;serve&quot;                   [default]
+  mdlaunch serve &lt;file&gt; [port]  build a presentation from markdown and start a
+                                server
+  mdlaunch build &lt;file&gt;         build a presentation
+
+Positionals:
+  port, p  port to bind server to                                         [number] [default: 5000]
+
+Options:
+  --help              Display this help                                   [boolean]
+  --version           Display version                                     [boolean]
+  --output, -o        output directory                                    [string] [default: &quot;dist&quot;]
+  --separator, -s     regular expression for separating slides            [string]
+  --header-level, -l  maximum header level for separating slides          [number]</code></pre></section><section><h2 id="examples">Examples</h2>
+            <pre><code class="language-sh"># Build a presentation to my-presentation without starting a server.
+# Also use any header with level 4 or lower to separate slides. (e.g. ### Header)
+mdlaunch build README.md --output &quot;my-presentation&quot; --header-level 4
+
+# Build a presentation and run it on port 3000. Also separate slides with &lt;hr&gt;.
+mdlaunch FILE.md --port 3000 --separator &quot;&lt;hr&gt;&quot;</code></pre>
+</section><section><h2 id="contact">Contact</h2>
+            <p>👤 <strong>Timo bechtel</strong></p>
+<ul>
+<li>Website: <a href="https://timobechtel.com">https://timobechtel.com</a></li>
+<li>Twitter: <a href="https://twitter.com/TimoBechtel">@TimoBechtel</a></li>
+<li>GitHub: <a href="https://github.com/TimoBechtel">@TimoBechtel</a></li>
+</ul>
+</section><section><h2 id="🤝-contributing">🤝 Contributing</h2>
+            <p>Contributions, issues and feature requests are welcome!<br /></p>
+<ol>
+<li>Check <a href="https://github.com/TimoBechtel/mdlaunch/issues">issues</a></li>
+<li>Fork the Project</li>
+<li>Create your Feature Branch (<code>git checkout -b feat/AmazingFeature</code>)</li>
+<li>Test your changes <code>npm run test</code></li>
+<li>Commit your Changes (<code>git commit -m &#39;feat: add amazingFeature&#39;</code>)</li>
+<li>Push to the Branch (<code>git push origin feat/AmazingFeature</code>)</li>
+<li>Open a Pull Request</li>
+</ol>
+</section><section><h3 id="commit-messages">Commit messages</h3>
+            <p>This project uses semantic-release for automated release versions. So commits in this project follow the <a href="https://www.conventionalcommits.org/en/v1.0.0-beta.2/">Conventional Commits</a> guidelines. I recommend using <a href="https://github.com/commitizen/cz-cli">commitizen</a> for automated commit messages.</p>
+</section><section><h2 id="show-your-support">Show your support</h2>
+            <p>Give a ⭐️ if this project helped you!</p>
+</section><section><h2 id="📝-license">📝 License</h2>
+            <p>Distributed under the <a href="https://github.com/TimoBechtel/mdlaunch/blob/master/LICENSE">MIT</a> License.</p>
+<hr>
+<p><em>This README was generated with ❤️ by <a href="https://github.com/kefranabg/readme-md-generator">readme-md-generator</a></em></p>
+</section> </div></div><script src=./index.js></script></body></html>
