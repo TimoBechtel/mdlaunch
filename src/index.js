@@ -1,5 +1,4 @@
-import 'reveal.js/css/reveal.css';
-import 'reveal.js/css/theme/black.css';
+import './reveal.scss';
 import 'highlight.js/styles/dracula.css';
 import Reveal from 'reveal.js';
 import hljs from 'highlight.js';
