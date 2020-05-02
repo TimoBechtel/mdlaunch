@@ -1,4 +1,5 @@
 import { terser } from 'rollup-plugin-terser';
+import commonjs from '@rollup/plugin-commonjs';
 
 const dev = process.env.ROLLUP_WATCH;
 
@@ -9,5 +10,5 @@ export default {
     format: 'cjs',
   },
   external: ['path', 'marked', 'ejs', 'fs', 'ncp', 'polka', 'sirv', 'yargs'],
-  plugins: [!dev && terser()],
+  plugins: [commonjs(), !dev && terser()],
 };

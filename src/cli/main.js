@@ -6,7 +6,9 @@ import { readFile, writeFile, copyDir } from './fileSystemHelper';
 import { processCLIArguments } from './argumentsParser';
 
 const TEMPLATE_DIR = '../template/';
+const THEMES_DIR = '../themes/';
 const TEMPLATE_FILE = 'index.html';
+const CSS_FILE = 'index.css';
 
 export const cli = async () => {
   const {
@@ -15,9 +17,12 @@ export const cli = async () => {
     port,
     serve,
     parserOptions,
+    theme,
   } = processCLIArguments();
 
   await build(inputFile, outputPath, parserOptions);
+
+  if (theme) exportTheme(theme, outputPath);
 
   if (serve) runServer(port, outputPath);
 };
@@ -64,3 +69,12 @@ async function build(inputFile, outputPath, parserOptions) {
 
   console.log(`Successfully build presentation to ${outputPath}`);
 }
+
+const exportTheme = async (themeFile, outputPath) => {
+  const sourceFile = path.resolve(__dirname, THEMES_DIR + themeFile);
+  try {
+    await copyDir(sourceFile, outputPath + CSS_FILE);
+  } catch (error) {
+    console.log(error);
+  }
+};

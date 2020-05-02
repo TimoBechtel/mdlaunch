@@ -8,13 +8,14 @@
     "bin"
   ],
   "scripts": {
-    "dev": "run-p --race dev:cli dev:template",
+    "dev": "npm run build:themes && run-p --race dev:cli dev:template",
     "dev:cli": "rollup -c src/cli/rollup.config.js -w",
     "dev:template": "rollup -c src/template/rollup.config.js -w",
     "prepare": "npm run build",
-    "build": "run-p build:cli build:template",
+    "build": "run-p build:cli build:template build:themes",
     "build:cli": "rollup -c src/cli/rollup.config.js",
     "build:template": "rollup -c src/template/rollup.config.js",
+    "build:themes": "node src/themes/build.js",
     "lint": "eslint src",
     "test": "npm run lint"
   },

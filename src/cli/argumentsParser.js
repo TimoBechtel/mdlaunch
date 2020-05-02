@@ -1,4 +1,5 @@
 import yargs from 'yargs';
+import themes from '../themes/themes';
 
 export const processCLIArguments = () => {
   yargs
@@ -42,6 +43,12 @@ export const processCLIArguments = () => {
       type: 'number',
       conflicts: 'separator',
       description: 'maximum header level for separating slides',
+    })
+    .option('theme', {
+      alias: 't',
+      type: 'string',
+      choices: themes,
+      description: 'set a different theme',
     });
 
   return {
@@ -53,5 +60,6 @@ export const processCLIArguments = () => {
       sectionSeparator: yargs.argv.separator,
       maxHeaderLevel: yargs.argv['header-level'],
     },
+    theme: yargs.argv.theme,
   };
 };
