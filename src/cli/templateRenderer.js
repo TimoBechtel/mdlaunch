@@ -1,4 +1,3 @@
-/* eslint-disable compat/compat */
 import ejs from 'ejs';
 
 export const renderTemplate = async (file, { title, html }) => {

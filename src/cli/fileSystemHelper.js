@@ -1,4 +1,3 @@
-/* eslint-disable compat/compat */
 import fs from 'fs';
 import { ncp } from 'ncp';
 

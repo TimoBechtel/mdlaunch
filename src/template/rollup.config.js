@@ -11,21 +11,22 @@ import postcssPresetEnv from 'postcss-preset-env';
 import normalize from 'postcss-normalize';
 
 const dev = process.env.ROLLUP_WATCH;
+const outputDir = 'dist/template/';
 
 export default {
-  input: 'src/index.js',
+  input: 'src/template/index.js',
   output: {
-    dir: 'dist/',
+    dir: outputDir,
     sourcemap: dev,
   },
   plugins: [
     dev &&
       serve({
         port: 3000,
-        contentBase: 'dist/',
+        contentBase: outputDir,
       }),
     del({
-      targets: 'dist/*',
+      targets: `${outputDir}*`,
       runOnce: dev,
     }),
     resolve(),
@@ -44,7 +45,7 @@ export default {
     }),
     !dev && terser(),
     html({
-      template: 'src/template.html',
+      template: 'src/template/template.html',
       fileName: 'index.html',
       onlinePath: '.',
       minify: dev

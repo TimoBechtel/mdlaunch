@@ -5,6 +5,9 @@ import { serve as runServer } from './server';
 import { readFile, writeFile, copyDir } from './fileSystemHelper';
 import { processCLIArguments } from './argumentsParser';
 
+const TEMPLATE_DIR = '../template/';
+const TEMPLATE_FILE = 'index.html';
+
 export const cli = async () => {
   const {
     inputFile,
@@ -20,9 +23,8 @@ export const cli = async () => {
 };
 
 async function build(inputFile, outputPath, parserOptions) {
-  const templateFolder = path.resolve(__dirname, '../dist/');
-  const templateFileName = 'index.html';
-  const templateFilePath = path.resolve(templateFolder, templateFileName);
+  const templateFolder = path.resolve(__dirname, TEMPLATE_DIR);
+  const templateFilePath = path.resolve(templateFolder, TEMPLATE_FILE);
 
   try {
     await copyDir(templateFolder, outputPath);
@@ -54,7 +56,7 @@ async function build(inputFile, outputPath, parserOptions) {
   }
 
   try {
-    await writeFile(path.resolve(outputPath, templateFileName), renderedHTML);
+    await writeFile(path.resolve(outputPath, TEMPLATE_FILE), renderedHTML);
   } catch (error) {
     console.log(error);
     process.exit();
