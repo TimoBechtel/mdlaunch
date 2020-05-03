@@ -8,6 +8,6 @@ export default {
     file: 'dist/cli/main.js',
     format: 'cjs',
   },
-  external: ['path', 'marked', 'ejs', 'fs', 'ncp', 'polka', 'sirv', 'yargs'],
+  external: ['path', 'marked', 'ejs', 'fs', 'ncp', 'http', 'sirv', 'yargs'],
   plugins: [!dev && terser()],
 };
