@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/TimoBechtel/mdlaunch/compare/v1.2.1...v1.3.0) (2020-05-03)
+
+
+### Features
+
+* **highlight.js:** add prerendering for highlightjs ([72c5e7f](https://github.com/TimoBechtel/mdlaunch/commit/72c5e7fb2e6433cb6755e6df4b593672a354053f))
+
 ## [1.2.1](https://github.com/TimoBechtel/mdlaunch/compare/v1.2.0...v1.2.1) (2020-05-03)
 
 
