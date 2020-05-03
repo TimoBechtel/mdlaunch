@@ -1,4 +1,5 @@
 import marked from 'marked';
+import hljs from 'highlight.js';
 
 export const parseToHTML = (
   markdown,
@@ -17,6 +18,13 @@ export const parseToHTML = (
         },
       },
     });
+
+  marked.setOptions({
+    highlight: function (code, language) {
+      const validLanguage = hljs.getLanguage(language) ? language : 'plaintext';
+      return hljs.highlight(validLanguage, code).value;
+    },
+  });
 
   let rendered = marked(markdown);
   if (sectionSeparator)
