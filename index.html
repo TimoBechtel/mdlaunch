@@ -44,7 +44,7 @@ So you can spin up a presentation from your existings notes/wiki/etc.</p>
 build a presentation from markdown and start a server
 
 Commands:
-  mdlaunch &lt;file&gt; [port]        alias to server &quot;serve&quot;                   [default]
+  mdlaunch &lt;file&gt; [port]        alias to server "serve"                   [default]
   mdlaunch serve &lt;file&gt; [port]  build a presentation from markdown and start a
                                 server
   mdlaunch build &lt;file&gt;         build a presentation
@@ -55,15 +55,15 @@ Positionals:
 Options:
   --help              Display this help                                   [boolean]
   --version           Display version                                     [boolean]
-  --output, -o        output directory                                    [string] [default: &quot;dist&quot;]
+  --output, -o        output directory                                    [string] [default: "dist"]
   --separator, -s     regular expression for separating slides            [string]
   --header-level, -l  maximum header level for separating slides          [number]</code></pre></section><section><h2 id="examples">Examples</h2>
-            <pre><code class="language-sh"># Build a presentation to my-presentation without starting a server.
-# Also use any header with level 4 or lower to separate slides. (e.g. ### Header)
-mdlaunch build README.md --output &quot;my-presentation&quot; --header-level 4
+            <pre><code class="language-sh"><span class="hljs-comment"># Build a presentation to my-presentation without starting a server.</span>
+<span class="hljs-comment"># Also use any header with level 4 or lower to separate slides. (e.g. ### Header)</span>
+mdlaunch build README.md --output <span class="hljs-string">"my-presentation"</span> --header-level 4
 
-# Build a presentation and run it on port 3000. Also separate slides with &lt;hr&gt;.
-mdlaunch FILE.md --port 3000 --separator &quot;&lt;hr&gt;&quot;</code></pre>
+<span class="hljs-comment"># Build a presentation and run it on port 3000. Also separate slides with &lt;hr&gt;.</span>
+mdlaunch FILE.md --port 3000 --separator <span class="hljs-string">"&lt;hr&gt;"</span></code></pre>
 </section><section><h2 id="contact">Contact</h2>
             <p>👤 <strong>Timo bechtel</strong></p>
 <ul>
