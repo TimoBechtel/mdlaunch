@@ -36,3 +36,13 @@ section.has-light-background {
 }
 
 @import '~reveal.js/css/theme/template/theme.scss';
+
+.reveal code {
+  background-color: #23242c;
+  padding: 3px 5px;
+  border-radius: 3px;
+}
+
+.reveal pre code {
+  padding: 10px 15px;
+}
