@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/TimoBechtel/mdlaunch/compare/v1.1.0...v1.2.0) (2020-05-03)
+
+
+### Features
+
+* extract Reveal.js initialization for easy customization ([c1c5b32](https://github.com/TimoBechtel/mdlaunch/commit/c1c5b32c25a45f1fc70a15eb19280b4db6da5682))
+
 # [1.1.0](https://github.com/TimoBechtel/mdlaunch/compare/v1.0.0...v1.1.0) (2020-04-30)
 
 
