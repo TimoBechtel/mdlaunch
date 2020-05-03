@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/TimoBechtel/mdlaunch/compare/v1.2.0...v1.2.1) (2020-05-03)
+
+
+### Bug Fixes
+
+* fix blank presentations issue ([036e46c](https://github.com/TimoBechtel/mdlaunch/commit/036e46c3e1f08cfd7ed2f0723b70dd28a365d4b8)), closes [#1](https://github.com/TimoBechtel/mdlaunch/issues/1)
+
 # [1.2.0](https://github.com/TimoBechtel/mdlaunch/compare/v1.1.0...v1.2.0) (2020-05-03)
 
 
