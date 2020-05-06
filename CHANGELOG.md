@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/TimoBechtel/mdlaunch/compare/v1.4.0...v1.5.0) (2020-05-06)
+
+
+### Features
+
+* **cli:** add open command, to directly open presentation in default browser ([b6b93a9](https://github.com/TimoBechtel/mdlaunch/commit/b6b93a9c72b5d24e37ed724b2b8ca40449628102))
+
 # [1.4.0](https://github.com/TimoBechtel/mdlaunch/compare/v1.3.0...v1.4.0) (2020-05-03)
 
 
