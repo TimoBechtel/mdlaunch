@@ -18,6 +18,7 @@ export default {
     'sirv',
     'yargs',
     'highlight.js',
+    'open',
   ],
   plugins: [!dev && terser()],
 };

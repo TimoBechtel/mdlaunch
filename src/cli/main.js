@@ -4,6 +4,7 @@ import { renderTemplate } from './templateRenderer';
 import { serve as runServer } from './server';
 import { readFile, writeFile, copyDir } from './fileSystemHelper';
 import { processCLIArguments } from './argumentsParser';
+import openFile from 'open';
 
 const TEMPLATE_DIR = '../template/';
 const TEMPLATE_FILE = 'index.html';
@@ -14,12 +15,16 @@ export const cli = async () => {
     outputPath,
     port,
     serve,
+    open,
     parserOptions,
   } = processCLIArguments();
 
   await build(inputFile, outputPath, parserOptions);
 
-  if (serve) runServer(port, outputPath);
+  if (serve) {
+    await runServer(port, outputPath);
+    if (open) openFile(`http://localhost:${port}`);
+  }
 };
 
 async function build(inputFile, outputPath, parserOptions) {
