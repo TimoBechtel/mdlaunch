@@ -41,16 +41,19 @@ So you can spin up a presentation from your existings notes/wiki/etc.</p>
 <p>And open it with any webbrowser: <a href="http://localhost:5000">http://localhost:5000</a></p>
 <p>You can of course install it globally, if you want to:</p>
 <pre><code class="language-sh">npm install --global mdlaunch</code></pre>
-</section><section><h3 id="help-screen">Help screen:</h3>
-            <pre><code>mdlaunch &lt;file&gt; [port]
+<p>Then you can run <code>mdlaunch</code> directly.</p>
+</section><section><h3 id="help-screen-mdlaunch---help">Help screen: <code>mdlaunch --help</code></h3>
+            <pre><code>mdlaunch &lt;file&gt;
 
-build a presentation from markdown and start a server
+build a presentation from a markdown file and  start a server (alias to
+"mdlaunch serve &lt;file&gt; --open")
 
 Commands:
-  mdlaunch &lt;file&gt; [port]        alias to "serve"                   [default]
-  mdlaunch serve &lt;file&gt; [port]  build a presentation from markdown and start a
-                                server
-  mdlaunch build &lt;file&gt;         build a presentation
+  mdlaunch &lt;file&gt;        build a presentation from a markdown file and  start a
+                         server (alias to "mdlaunch serve &lt;file&gt; --open")
+                                                                          [default]
+  mdlaunch serve &lt;file&gt;  build presentation from markdown and start a server
+  mdlaunch build &lt;file&gt;  build a presentation
 
 Positionals:
   port, p  port to bind server to                                         [number] [default: 5000]
@@ -60,7 +63,9 @@ Options:
   --version           Display version                                     [boolean]
   --output, -o        output directory                                    [string] [default: "dist"]
   --separator, -s     regular expression for separating slides            [string]
-  --header-level, -l  maximum header level for separating slides          [number]</code></pre></section><section><h2 id="examples">Examples</h2>
+  --header-level, -l  maximum header level for separating slides          [number]
+  --port, -p          port to bind server to                              [number] [default: 5000]
+  --open              open browser after creating presentation            [boolean] [default: true]</code></pre></section><section><h2 id="examples">Examples</h2>
             <pre><code class="language-sh"><span class="hljs-comment"># Build a presentation to my-presentation without starting a server.</span>
 <span class="hljs-comment"># Also use any header with level 4 or lower to separate slides. (e.g. ### Header)</span>
 mdlaunch build README.md --output <span class="hljs-string">"my-presentation"</span> --header-level 4
