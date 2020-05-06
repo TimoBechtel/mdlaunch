@@ -55,18 +55,22 @@ You can of course install it globally, if you want to:
 npm install --global mdlaunch
 ```
 
-### Help screen:
+Then you can run `mdlaunch` directly.
+
+### Help screen: `mdlaunch --help`
 
 ```
-mdlaunch <file> [port]
+mdlaunch <file>
 
-build a presentation from markdown and start a server
+build a presentation from a markdown file and  start a server (alias to
+"mdlaunch serve <file> --open")
 
 Commands:
-  mdlaunch <file> [port]        alias to "serve"                   [default]
-  mdlaunch serve <file> [port]  build a presentation from markdown and start a
-                                server
-  mdlaunch build <file>         build a presentation
+  mdlaunch <file>        build a presentation from a markdown file and  start a
+                         server (alias to "mdlaunch serve <file> --open")
+                                                                          [default]
+  mdlaunch serve <file>  build presentation from markdown and start a server
+  mdlaunch build <file>  build a presentation
 
 Positionals:
   port, p  port to bind server to                                         [number] [default: 5000]
@@ -77,6 +81,8 @@ Options:
   --output, -o        output directory                                    [string] [default: "dist"]
   --separator, -s     regular expression for separating slides            [string]
   --header-level, -l  maximum header level for separating slides          [number]
+  --port, -p          port to bind server to                              [number] [default: 5000]
+  --open              open browser after creating presentation            [boolean] [default: true]
 ```
 
 ## Examples
