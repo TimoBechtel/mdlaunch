@@ -21,6 +21,7 @@
 ## Table of Contents
 
 - [About](#about)
+- [Prerequisites](#prerequisites)
 - [Usage](#usage)
 - [Examples](#examples)
 - [Test](#run-tests)
@@ -36,6 +37,9 @@
 So you can spin up a presentation from your existings notes/wiki/etc.
 
 It uses [Reveal.js](https://github.com/hakimel/reveal.js/) under the hood.
+
+## Prerequisites
+To use it you need [Node](https://nodejs.org/en/) installed.
 
 ## Usage
 
@@ -59,7 +63,7 @@ mdlaunch <file> [port]
 build a presentation from markdown and start a server
 
 Commands:
-  mdlaunch <file> [port]        alias to server "serve"                   [default]
+  mdlaunch <file> [port]        alias to "serve"                   [default]
   mdlaunch serve <file> [port]  build a presentation from markdown and start a
                                 server
   mdlaunch build <file>         build a presentation
