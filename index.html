@@ -21,6 +21,7 @@
 </section><section><h2 id="table-of-contents">Table of Contents</h2>
             <ul>
 <li><a href="#about">About</a></li>
+<li><a href="#prerequisites">Prerequisites</a></li>
 <li><a href="#usage">Usage</a></li>
 <li><a href="#examples">Examples</a></li>
 <li><a href="#run-tests">Test</a></li>
@@ -33,6 +34,8 @@
 <p><code>mdlaunch</code> was made to quickly create a HTML slideshow from any existing markdown files without making changes.
 So you can spin up a presentation from your existings notes/wiki/etc.</p>
 <p>It uses <a href="https://github.com/hakimel/reveal.js/">Reveal.js</a> under the hood.</p>
+</section><section><h2 id="prerequisites">Prerequisites</h2>
+            <p>To use it you need <a href="https://nodejs.org/en/">Node</a> installed.</p>
 </section><section><h2 id="usage">Usage</h2>
             <pre><code class="language-sh">npx mdlaunch YOUR_MARKDOWN_FILE</code></pre>
 <p>And open it with any webbrowser: <a href="http://localhost:5000">http://localhost:5000</a></p>
@@ -44,7 +47,7 @@ So you can spin up a presentation from your existings notes/wiki/etc.</p>
 build a presentation from markdown and start a server
 
 Commands:
-  mdlaunch &lt;file&gt; [port]        alias to server "serve"                   [default]
+  mdlaunch &lt;file&gt; [port]        alias to "serve"                   [default]
   mdlaunch serve &lt;file&gt; [port]  build a presentation from markdown and start a
                                 server
   mdlaunch build &lt;file&gt;         build a presentation
