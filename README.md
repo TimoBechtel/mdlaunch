@@ -4,7 +4,7 @@
   <a href="https://www.npmjs.com/package/mdlaunch" target="_blank">
     <img alt="Version" src="https://img.shields.io/npm/v/mdlaunch.svg">
   </a>
-  <a href="https://github.com/TimoBechtel/mdlaunch/blob/master/LICENSE" target="_blank">
+  <a href="https://github.com/TimoBechtel/mdlaunch/blob/main/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/github/license/TimoBechtel/mdlaunch" />
   </a>
 </p>
@@ -126,7 +126,7 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-Distributed under the [MIT](https://github.com/TimoBechtel/mdlaunch/blob/master/LICENSE) License.
+Distributed under the [MIT](https://github.com/TimoBechtel/mdlaunch/blob/main/LICENSE) License.
 
 ---
 
