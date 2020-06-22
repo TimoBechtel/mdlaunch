@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/TimoBechtel/mdlaunch/compare/v1.5.0...v1.5.1) (2020-06-22)
+
+
+### Bug Fixes
+
+* **readme:** fix links to reflect branch renaming ([ec84526](https://github.com/TimoBechtel/mdlaunch/commit/ec84526d2cdd6028a73faa6e71bc3dae1aa72229))
+
 # [1.5.0](https://github.com/TimoBechtel/mdlaunch/compare/v1.4.0...v1.5.0) (2020-05-06)
 
 
