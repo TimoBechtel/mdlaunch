@@ -1,3 +1,10 @@
+## [1.5.2](https://github.com/TimoBechtel/mdlaunch/compare/v1.5.1...v1.5.2) (2020-09-07)
+
+
+### Bug Fixes
+
+* **deps:** bump (security) ([90a9432](https://github.com/TimoBechtel/mdlaunch/commit/90a9432adc5fbf7fa41f707e522959fa6a4928cd))
+
 ## [1.5.1](https://github.com/TimoBechtel/mdlaunch/compare/v1.5.0...v1.5.1) (2020-06-22)
 
 
